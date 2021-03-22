@@ -1,8 +1,11 @@
-function Footer() {
+import './footer.scss';
+import Settings from '../store/settings';
+
+function Footer() : JSX.Element {
     return (
-        <div>
-            footer 
-        </div>
+        <footer>
+            { Settings.Copyright } © { new Date().getFullYear() }
+        </footer>
     )
 }
 
