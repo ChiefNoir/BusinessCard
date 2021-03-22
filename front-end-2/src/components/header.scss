@@ -1,0 +1,25 @@
+@import "/src/assets/scss/variables.scss";
+@import "/src/assets/scss/mixins.scss";
+@import "/src/assets/scss/animations.scss";
+
+.header {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+
+  &:hover {
+    animation: delayed-onetime-flicker 2s linear 2s;
+  }
+
+  a {
+    color: $color-text;
+    font-family: $font-header;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include text-retro-shadow($color-shadow-text-light);
+  }
+}
