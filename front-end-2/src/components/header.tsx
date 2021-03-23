@@ -1,19 +1,16 @@
 import './header.scss'
 import Settings from '../store/settings';
-import React from 'react';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
+    BrowserRouter,
     Link
   } from 'react-router-dom';
 
-function Header() {
+function Header() : JSX.Element {
     return (
         <div className="header">
-            <Router>
-            <Link to="/"> {Settings.SiteName} </Link>
-            </Router>
+            <BrowserRouter>
+                <Link to="/"> {Settings.SiteName} </Link>
+            </BrowserRouter>
         </div>
     )
 }
