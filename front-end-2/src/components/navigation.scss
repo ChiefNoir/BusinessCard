@@ -1,0 +1,32 @@
+@import "/src/assets/scss/variables.scss";
+@import "/src/assets/scss/mixins.scss";
+@import "/src/assets/scss/animations.scss";
+// @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.navigation {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+    a {
+      color: $color-text;
+      font-size: 25px;
+      height: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      
+      
+
+    }
+    a:hover {
+      color: $color-text-highlighted;
+      text-shadow: $shadow-text;
+      background-color: $color-container-transparent;
+    }
+    .active {
+      background-color: $color-container;
+    }
+  }
+  

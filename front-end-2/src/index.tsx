@@ -5,11 +5,13 @@ import App from './App';
 import Footer from './components/footer'
 import Header from './components/header'
 import reportWebVitals from './reportWebVitals';
+import Navigation from './components/navigation';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <Navigation />
     <App />
     <Footer />
   </React.StrictMode>,
